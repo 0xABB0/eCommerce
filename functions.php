@@ -2,7 +2,7 @@
 
 function show_navbar() {
     echo "<div class='navbar'>
-            <a href='/PhpProject1/index.php'>Home</a>";
+            <a href='/index.php'>Home</a>";
     if (isset($_SESSION['mail'])) {
         $account = $_SESSION['mail'];
         echo "<div class='dropdown'>
@@ -11,17 +11,17 @@ function show_navbar() {
                 </button>
                 <div class='dropdown-content'>";
         if ($_SESSION['is_magazine'] == 1) {
-            echo "<a href='/PhpProject1/admin/add_product.php'> Aggiungi prodotto</a>";
-            echo "<a href='/PhpProject1/admin/show_products.php'> Mostra prodotti</a>";
-            echo "<a href='/PhpProject1/admin/show_orders_admin.php'> Spedisci ordini</a>";
+            echo "<a href='admin/add_product.php'> Aggiungi prodotto</a>";
+            echo "<a href='/admin/show_products.php'> Mostra prodotti</a>";
+            echo "<a href='/admin/show_orders_admin.php'> Spedisci ordini</a>";
         }
-        echo "<a href='/PhpProject1/show_orders.php'>Mostra acquisti</a>
-                <a href='/PhpProject1/logout.php'>Logout</a>
+        echo "<a href='/show_orders.php'>Mostra acquisti</a>
+                <a href='/logout.php'>Logout</a>
             </div>
         </div> 
     </div>";
     } else {
-        echo "<a href='/PhpProject1/login.php' style='float:right'>Login</a>";
+        echo "<a href='/login.php' style='float:right'>Login</a>";
     }
     echo '</div>';
 }
