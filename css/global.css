@@ -1,0 +1,16 @@
+body {
+    background: #76b852;
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F); 
+}
+
+a:visited, a:link{
+    text-decoration: none;
+    color: white;
+}
+
+td{
+    color: white;
+}
